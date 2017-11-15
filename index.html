@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1200">
+	<title>Купить CRM от партнера Bitrix24</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="header_white">
+	<header class="header container">
+		<a class="header_logo" href="https://halikov-studio.ru/"><img src="img/logo-halikov.png" width="202" height="68"
+		                                                              alt="Halikov logo"></a>
+		<nav class="header_nav">
+			<ul>
+				<li><a href="javascript:void(0)" onclick="slowScroll ('#features')">Преимущества</a></li>
+				<li><a href="javascript:void(0)" onclick="slowScroll ('#license')">Купить лицензию</a></li>
+				<li><a href="javascript:void(0)" onclick="slowScroll ('#competence')">Компетенции</a></li>
+				<li><a href="javascript:void(0)" onclick="slowScroll ('#map')">Наша география</a></li>
+			</ul>
+		</nav>
+		<div class="header_tel">
+			<b class="header_tel__number">8 800 2009 887 </b>
+			<button class="header_tel__btn btn similarpopup" type="button">Заказать звонок</button>
+			<p class="hidehidebt similartextget">Заказать звонок</p>
+		</div>
+	</header>
+</div>
+<div class="video_block">
+	<div class="video_front">
+		<p class="video_text">Автоматизируем рутинные процессы Вашего бизнеса<br>с помощью <span class="bitrix_logo">Битрикс24</span>
+			всего за 1 день<span class="video_text_discount">До конца сентября скидка до 5%</span></p>
+		<p class="video_btn__text">Узнай почём прямо сейчас</p>
+		<button class="btn similarpopup pricebtn" type="button">Узнать стоимость</button>
+		<p class="hidehidebt similartextget">Узнать стоимость</p>
+	</div>
+	<div class="video_form">
+		<form class="ui form segment popup_form__flex" id="formdiscount">
+			<img class="video_form__img" src="img/video_form-img.png" alt="">
+			<div class="video_form__right">
+				<p class="video_form__text">Получить купон на скидку прямо сейчас от партнера Битрикс24</p>
+				<div class="video_form_flex_horisontal">
+					<div class="field">
+						<div class="field popup_form__call">
+							<input placeholder="Имя" name="name" type="text"  maxlength="12" required>
+						</div>
+					</div>
+					<div class="field">
+						<input class="phone" placeholder="Телефон" name="phone" type="text" minlength="5" maxlength="12" required>
+					</div>
+					<button class="btn" type="submit">Отправить</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<video class="video" autoplay="autoplay" loop="loop">
+	<source src="video/bitrix24.mp4" type="video/mp4">
+</video>
+<div class="to-hide-video"></div>
+
+<div class="features container">
+	<h2 class="section_title" id="features">Почему работают с нами</h2>
+	<ul>
+		<li class="features_item">
+			<div class="features_item__img"></div>
+			<p class="features_item__text">Гарантия оригинальности лицензии</p>
+		</li>
+		<li class="features_item">
+			<div class="features_item__img"></div>
+			<p class="features_item__text">Дробление платежа</p>
+		</li>
+		<li class="features_item">
+			<div class="features_item__img"></div>
+			<p class="features_item__text">Бесплатная установка и настройка</p>
+		</li>
+		<li class="features_item">
+			<div class="features_item__img"></div>
+			<p class="features_item__text">Стоимость лицензии ниже, чем у Битрикс24</p>
+		</li>
+		<li class="features_item">
+			<div class="features_item__img"></div>
+			<p class="features_item__text">Скидка на продление лицензии</p>
+		</li>
+	</ul>
+</div>
+<div class="start">
+	<div class="start_content container">
+		<img class="start_img" src="img/notebook-start.png" alt="Ноутбук Bitrix24">
+		<div class="start_right">
+			<p class="start_text">Вам нужен эффективный отдел продаж за 2 месяца?<br>Начни с автоматизации с помощью
+				<span class="start_text__bold">CRM Битрикс24</span></p>
+			<div class="start_get">
+				<button class="start_get__btn btn similarpopup" type="button">Получить</button>
+				<p class="start_get__text similartextget">Получить пошаговую<br> инструкцию</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="license container" id="license">
+	<h2 class="license_title section_title">Лицензия для <span class="bitrix_logo">Битрикс<span
+			class="bitrix_logo__number">24</span></span></h2>
+	<div class="wrapper">
+		<div class="tabs">
+			<span class="tab"><span class="tab_title">Коробка</span></span>
+			<span class="tab"><span class="tab_title">Облако</span></span>
+		</div>
+		<div class="tab_content">
+			<div class="tab_item">
+				<ul>
+					<li>
+						<div class="license_name">"1С-Битрикс24". Лицензия CRM"</div>
+						<div class="license_price">59 000 руб.</div>
+						<button class="license_btn btn" type="button" onclick="licnamefunc()">Купить</button>
+					</li>
+					<li>
+						<div class="license_name" id="license_name2">"1С-Битрикс24". Лицензия Корпоративный портал -
+							50
+						</div>
+						<div class="license_price">139 000 руб.</div>
+						<button class="license_btn btn" type="button">Купить</button>
+					</li>
+					<li>
+						<div class="license_name">"1С-Битрикс24". Лицензия Корпоративный портал - 100</div>
+						<div class="license_price">199 000 руб.</div>
+						<button class="license_btn btn" type="button">Купить</button>
+					</li>
+					<li>
+						<div class="license_name">"1С-Битрикс24". Лицензия Корпоративный портал - 250</div>
+						<div class="license_price">299 000 руб.</div>
+						<button class="license_btn btn" type="button">Купить</button>
+					</li>
+					<li>
+						<div class="license_name">"1С-Битрикс24". Лицензия Корпоративный портал - 500</div>
+						<div class="license_price">399 000 руб.</div>
+						<button class="license_btn btn" type="button">Купить</button>
+					</li>
+					<li>
+						<div class="license_name">"1С-Битрикс24". Лицензия Энтерпрайз</div>
+						<div class="license_price">699 000 руб</div>
+						<button class="license_btn btn" type="button">Купить</button>
+					</li>
+				</ul>
+			</div>
+			<div class="tab_item">
+				<ul>
+					<li>
+						<div class="license_name">Проект</div>
+						<div class="license_price">Бесплатно</div>
+						<button class="license_btn btn" type="button">Купить</button>
+					</li>
+					<li>
+						<div class="license_name">Проект+</div>
+						<div class="license_price">990 руб./мес.</div>
+						<button class="license_btn btn" type="button">Купить</button>
+					</li>
+					<li>
+						<div class="license_name">Команда</div>
+						<div class="license_price">5 490 руб.</div>
+						<button class="license_btn btn" type="button">Купить</button>
+					</li>
+					<li>
+						<div class="license_name">Компания</div>
+						<div class="license_price">10 990 руб./мес.</div>
+						<button class="license_btn btn" type="button">Купить</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="start">
+	<div class="start_content container">
+		<img class="start_img" src="img/notebook-offer.png" alt="Ноутбук Bitrix24">
+		<div class="start_right">
+			<p class="start_text">Получить персональное предложение<br>для крупного внедрения</p>
+			<div class="start_get">
+				<button class="start_get__btn btn similarpopup" type="button">Получить</button>
+				<p class="start_get__text similartextget">Получить персональное<br> предложение</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="competence container" id="competence">
+	<h2 class="section_title">Компетенция партнера</h2>
+	<p class="competence_consult">Получить консультацию с выбором<br>продукта</p>
+	<div class="competence_block">
+		<div class="competence_left">
+			<img class="competence_left__img" src="img/competence-1.png" alt="">
+			<p class="competence_left__text">Продано коробочных лицензий для<br><span
+					class="text-red">гос структур</span></p>
+		</div>
+		<div class="competence_right">
+			<div class="competence_right__top">
+				<img class="competence_top__img" src="img/competence-2.png" alt="">
+				<p class="competence_top__text">Партнерство со студией<br><span
+						class="text-red">Регионального уровня</span><br>для внедрения</p>
+			</div>
+			<div class="competence_right__bottom">
+				<img class="competence_bottom__img" src="img/competence-3.png" alt="">
+				<p class="competence_bottom__text">Опыт работы <span class="text-red">с Битрикс24</span><br>со старта
+					продаж продукта</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="map" id="map">
+	<h2 class="section_title">Мы уже внедрили <span class="bitrix_logo">Битрикс<span
+			class="bitrix_logo__number">24</span></span><br>по городам России</h2>
+	<div class="map_relative">
+		<img class="map_img" src="img/map.png" alt="">
+		<div class="icon1 icon animated mov"></div>
+		<div class="icon2 icon animated mov"></div>
+		<div class="icon3 icon animated mov"></div>
+		<div class="icon4 icon animated mov"></div>
+		<div class="icon5 icon animated mov"></div>
+		<div class="icon6 icon animated mov"></div>
+		<div class="icon7 icon animated mov"></div>
+		<div class="icon8 icon animated mov"></div>
+		<div class="icon9 icon animated mov"></div>
+		<div class="icon10 icon animated mov"></div>
+	</div>
+</div>
+<div class="companies">
+	<div class="container">
+		<h3 class="companies_title">Более <span class="text-red">2000 000 компаний</span> уже используют <span
+				class="companies_title__bold">Битрикс24</span></h3>
+		<div class="companies_get">
+			<button class="companies_get__btn btn similarpopup simsim" type="button">Получить</button>
+			<p class="companies_get__text similartextget">Начать бесплатно</p>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<a href="tel:+73472944220" class="footer_tel">+7(347)29-44-220</a>
+		<a class="footer_bitrix" href=""></a>
+		<a class="footer_timeweb" href=""></a>
+		<div class="footer_soc">
+			<a class="footer_soc__vk" href=""></a>
+			<a class="footer_soc__fb" href=""></a>
+		</div>
+	</div>
+</div>
+
+<div class="popup_overlay"></div>
+<div class="popup_call">
+	<div class="popup_close"></div>
+	<p class="call_text">Заказать звонок</p>
+	<form class="ui form segment" method="post" id="formcall">
+		<input class="classsimilar" type="hidden" name="namesimilar" value="valsimilar">
+		<div class="popup_form__flex">
+			<div class="field">
+				<div class="field popup_form__call">
+					<input placeholder="Имя" name="name" type="text" required>
+				</div>
+			</div>
+			<div class="field">
+				<input class="phone" placeholder="+7(___)-___-__-__" name="phone" type="text" minlength="5" maxlength="12" required>
+			</div>
+		</div>
+		<div class="popup_checkbox__center">
+			<input type="checkbox" id="c42" required=""/>
+			<label class="popup_checkbox__text" for="c42">Я даю согласие на обработку моих персональных данных</label>
+		</div>
+		<button class="popup_btn btn" type="submit">Отправить</button>
+	</form>
+</div>
+
+
+<div class="popup_buy">
+	<button class="popup_close" type="button"></button>
+	<div class="buy_flex">
+		<img class="buy_img" src="img/bitrix-popup.png" alt="">
+		<p class="buy_text">Купить <span class="buy_text__bold">Битрикс24</span><br>со скидкой!</p>
+	</div>
+	<p class="buy_text__license">Лицензия Проект+ (1 мес.)</p>
+	<form class="ui form segment" id="formbuy">
+		<input class="classlicensename" type="hidden" name="namelicencename" value="vallicencename">
+		<div class="popup_form__flex">
+			<div class="field">
+				<div class="field">
+					<input placeholder="Имя" name="name" type="text" maxlength="8" required>
+				</div>
+			</div>
+			<div class="field">
+				<input class="phone" placeholder="+7(___)-___-__-__" name="phone" type="text" required>
+			</div>
+			<div class="field">
+				<input placeholder="E-mail:*" name="email" type="text" required>
+			</div>
+		</div>
+		<div class="popup_checkbox__center">
+			<input type="checkbox" id="c41" required/>
+			<label class="popup_checkbox__text" for="c41">Я даю согласие на обработку моих персональных данных</label>
+		</div>
+		<button class="popup_btn btn" type="submit">Отправить</button>
+		<p class="buy_text__bottom">*Для отправки кода лицензии</p>
+	</form>
+</div>
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script>
+	$(window).scroll(function () {
+		$('.mov').each(function () {
+			var imagePos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow + 700) {
+				$(this).addClass('bounceInDown');
+			}
+		});
+	});
+</script>
+
+<!--
+<script>
+	new WOW().init();
+</script>
+<script src="js/wow.min.js"></script>
+-->
+<!--
+<script>
+	function exmpl(){
+		alert('прошло две сек');
+	}
+	setInterval("exmpl();",2000);
+</script>
+-->
+
+
+<script src="js/form.js"></script>
+<script src="index.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+
+<script>
+	function slowScroll(id) {
+		var offset = 0;
+		$('html, body').animate({
+			scrollTop: $(id).offset().top - offset
+		}, 500);
+		return false;
+	}
+</script>
+
+
+<script>
+
+$(".license_btn").click(function () {
+	var BtnParent = $(this).parent();
+	var LicenseName = BtnParent.find(".license_name").text();
+	$(".buy_text__license").html(LicenseName);
+	$(".classlicensename").val(LicenseName);
+});
+
+
+$(".similarpopup").click(function () {
+	var similarpopupparent = $(this).parent();
+	var similarpopuptext= similarpopupparent.find(".similartextget").text();
+	$(".call_text").html(similarpopuptext);
+	$(".classsimilar").val(similarpopuptext);
+})
+
+</script>
+
+
+<script>
+	$(document).ready(function ($) {
+		$(".phone").mask("+7(999)-999-99-99", {placeholder: "+7(___)-___-__-__"});
+	});
+</script>
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45919716 = new Ya.Metrika({ id:45919716, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45919716" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
